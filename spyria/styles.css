@@ -196,7 +196,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -302,7 +302,7 @@ body {
 .contato-visita-externo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   width: 49%;
 }
 
@@ -313,4 +313,42 @@ body {
     font-weight: bold;
     color: #fff;
     /* padding-bottom: 20px; */
+}
+
+.footer-container {
+  background-color: #EFEFEF;
+
+}
+
+.footer-above {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-top: 1px solid #C8C8C8;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding: 10px 0 ;
+}
+
+.footer-above p {
+  align-items: center;
+  margin: 0;
+  font-family: Noto Sans;
+  font-weight: bold;
+  font-size: 16px;
+  color: #858585;
 }
