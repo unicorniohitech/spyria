@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spyria - Home</title>
+
+    <!-- Importando fontes -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+
+    <!-- Importando folhas de estilo -->
+    <link href="./stylesheets/styles.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
 
-    <link href="./styles.css" rel="stylesheet" type="text/css" />
-    <title>Spyria</title>
+    <!-- Importando scripts -->
 </head>
 
 <body>
-    <section class="navbar">
+    <section class="navbar" style="margin-bottom: 0px;">
         <div class="navbar-ghost"></div>
         <div class="navbar-container">
             <nav>
@@ -28,9 +34,9 @@
                 </div>
                 <div class="menu-container menu-container-navbar">
                     <ul class="menu">
-                        <li><a class="cards-link text-menu">Quem Somos</a></li>
-                        <li><a class="study-link text-menu">Equipe</a></li>
-                        <li><a class="footer-link text-menu">Contato</a></li>
+                        <li><a id="navbar_btn_quem_somos" class="cards-link text-menu">Quem Somos</a></li>
+                        <li><a id="navbar_btn_equipe" class="study-link text-menu">Equipe</a></li>
+                        <li><a id="navbar_btn_contato" class="footer-link text-menu">Contato</a></li>
                     </ul>
                 </div>
                 <div class="menu-container menu-container-navbar">
@@ -61,12 +67,152 @@
             <div class="nossa-historia-img">
                 <img src="./media/about.png">
             </div>
+            <div></div>
             <div class="nossa-historia-texto">
-                <h3 class="nossa-historia-titulo">Sobre a Spyria</h3>
+                <h3 class="nossa-historia-titulo title_text">Sobre a Spyria</h3>
+                <div class="yellow-row"><hr></div>
                 <p class="nossa-historia-descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                   labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                   consequat. Phasellus at vulputate augue. Suspendisse placerat dui sit amet enim sodales luctus. Donec neque mauris, pretium sed
                   maximus pretium, elementum non tellus. Nulla id velit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sessao_nosso_time"  class="sobre">
+        <div class="nosso-time">
+            <h3 class="nosso-time-titulo title_text">Nosso time</h3>
+            <div class="yellow-row-2"><hr></div>
+            <div class="botoes_cidades">
+                <div>
+                    <a id="btn-nova-iorque" class="text-button #cidade">Nova Iorque</a>
+                    <a id="btn-oslo" class="text-button #cidade">Oslo</a>
+                    <a id="btn-recife" class="text-button #cidade">Recife</a>
+                </div>
+            </div>
+            <div style="padding-top:50px;">
+                <div id="carrousel_nova-iorque" class="carousel">
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_1.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">Clarisse Desiré</div>
+                            <div class="telefone">+55 81 9 8801.0174</div>
+                            <div class="email">clarisse@spyria.com</div>
+                        </div>
+                    </div>
+
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_2.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">Jammil Goulhengr</div>
+                            <div class="telefone">+55 81 9 9250.4502</div>
+                            <div class="email">jammil@spyria.com</div>
+                        </div>
+                    </div>
+
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_3.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">Carrie Danning</div>
+                            <div class="telefone">+55 81 9 9944.8112</div>
+                            <div class="email">carrie@spyria.com</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="carrousel_oslo" class="carousel">
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_1.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">Clarisse Desiré</div>
+                            <div class="telefone">+55 81 9 8801.0174</div>
+                            <div class="email">clarisse@spyria.com</div>
+                        </div>
+                    </div>
+
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_2.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">Jammil Goulhengr</div>
+                            <div class="telefone">+55 81 9 9250.4502</div>
+                            <div class="email">jammil@spyria.com</div>
+                        </div>
+                    </div>
+
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_3.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">Carrie Danning</div>
+                            <div class="telefone">+55 81 9 9944.8112</div>
+                            <div class="email">carrie@spyria.com</div>
+                        </div>
+                    </div>
+
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_1.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">Clara Desiré</div>
+                            <div class="telefone">+55 81 9 8801.0174</div>
+                            <div class="email">clara@spyria.com</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="carrousel_recife" class="carousel">
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_1.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">Joana Maria</div>
+                            <div class="telefone">+55 81 9 8801.0174</div>
+                            <div class="email">joana@spyria.com</div>
+                        </div>
+                    </div>
+
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_2.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">James Danning</div>
+                            <div class="telefone">+55 81 9 9250.4502</div>
+                            <div class="email">james@spyria.com</div>
+                        </div>
+                    </div>
+
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_3.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">Carrie Danning</div>
+                            <div class="telefone">+55 81 9 9944.8112</div>
+                            <div class="email">carrie@spyria.com</div>
+                        </div>
+                    </div>
+
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_1.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">Clarisse Andrade</div>
+                            <div class="telefone">+55 81 9 8801.0174</div>
+                            <div class="email">clarisse@spyria.com</div>
+                        </div>
+                    </div>
+
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_2.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">Jammil Goulhengr</div>
+                            <div class="telefone">+55 81 9 9250.4502</div>
+                            <div class="email">jammil@spyria.com</div>
+                        </div>
+                    </div>
+
+                    <div class="card_pessoa">
+                        <img class="foto_pessoa" src="./media/Pessoa_3.png" alt="pessoa"/>
+                        <div class="detalhes_pessoa">
+                            <div class="nome">Carrie Danning</div>
+                            <div class="telefone">+55 81 9 9944.8112</div>
+                            <div class="email">carrie@spyria.com</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -116,7 +262,7 @@
       <div class="footer-above">
         <div class="menu-wrapper">
             <div class="logo-container">
-                <img src="media/logo.svg" alt="logo da spyria" id="navbar-logo" />
+                <img src="media/logo-cinza.png" alt="logo da spyria" id="navbar-logo" />
             </div>
         </div>
         <div>
@@ -133,8 +279,9 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="{% static 'js/slick-carousel/slick.js' %}"></script>
-    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./scripts/slick.min.js"></script>
+    <script type="text/javascript" src="./scripts/index.js"></script>
 </body>
+
 
 </html>

@@ -1,0 +1,460 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    background-color: #24BEC6;
+
+    border-radius: 0px;
+}
+
+.navbar .navbar-ghost {
+    width: 0px;
+}
+
+.navbar .navbar-container {
+    margin: auto;
+    width: 100%;
+    background-color: #24BEC6;
+}
+
+.text-menu {
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 5.4rem;
+}
+
+.text-menu:hover {
+    color: #19abb2;
+}
+
+.navbar .navbar-container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #24BEC6;
+    width: 80%;
+    margin: auto;
+}
+
+.navbar .navbar-container nav .menu-wrapper .logo-container {
+    width: 100%;
+}
+
+.navbar .navbar-container nav .menu-wrapper .logo-container #navbar-logo {
+    width: 240px;
+    height: 180px;
+}
+
+.navbar .navbar-container nav .menu-wrapper .show-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+.menu-container,
+.menu-wrapper {
+    width: 30%;
+    min-width: 170px;
+}
+
+.menu-container .menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.menu-container .menu li {
+    width: auto;
+    list-style-type: none;
+    margin: 5px 3% 5px 3%;
+    text-align: center;
+}
+
+.menu-container .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: "Nexa Light", sans-serif;
+    cursor: pointer;
+}
+
+.menu-container .menu li a:hover {
+    font-family: "Nexa Bold", sans-serif;
+}
+
+.fixed {
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.banner-fundo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../media/banner1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    width: 100vw;
+    height: 28vw;
+}
+
+.banner-col1 {
+    width: 100%;
+    height: 22vw;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 10%;
+}
+
+.banner-col1 p {
+    margin: 0;
+    font-family: Noto Sans;
+    font-size: xxx-large;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+.banner-col3>a {
+    height: 60px;
+}
+
+.banner-button {
+    width: 220px;
+    height: 45px;
+    background-color: #BF3B3A;
+    display: flex;
+    opacity: 0.9;
+    color: white;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    vertical-align: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.banner-botao:hover {
+    background-color: #912f2f;
+}
+
+.text-button {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 15px;
+
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: #FFE8AF;
+    border: 2px solid #FFE8AF;
+    text-decoration: none;
+    width: fit-content;
+    padding: 10px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+.text-button:hover {
+    background-color: rgba(255,232,175,0.3);
+    color: white;
+    border: 2px solid #FFE8AF;
+    text-decoration:none;
+}
+
+.banner-container {
+    height: auto;
+    width: 100vw;
+}
+
+.banner-seta {
+    height: 60px;
+    width: 60px;
+    transform: rotate(90deg);
+    align-self: center;
+    display: flex;
+    color: white;
+    fill: white;
+    cursor: pointer;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF;
+    width: 100vw;
+}
+
+.nossa-historia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.nossa-historia-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 49%;
+}
+
+.yellow-row{
+    width: 25%;
+    padding-bottom: 20px;
+}
+
+.yellow-row > hr {
+    border-top: 3px solid #f9ca55;
+    margin-top: 8px;
+}
+
+.nossa-historia-titulo {
+    font-size: xxx-large;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #5b5b5b;
+}
+
+.nossa-historia-descricao {
+    font-family: Noto Sans;
+    color: #5b5b5b;
+    line-height: 1.8;
+    font-size: 1.6rem;
+    /*width: 49%;*/
+}
+
+.nossa-historia-img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 0;
+    width: 49%;
+}
+
+.nossa-historia-img>img {
+    height: 390px;
+    width: auto;
+}
+
+/* ---------------- sessão Nosso Time */
+#sessao_nosso_time {
+    width: 100%;
+    background-color: #24bec6;
+    padding-bottom: 50px;
+}
+
+.botoes_cidades {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.cidade {
+    margin: 10px 10px;
+}
+
+.nosso-time{
+    width: 80%;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.nosso-time-titulo {
+    font-size: xxx-large;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    margin: 0px;
+}
+
+.card_pessoa {
+    height: 270px;
+    padding: 0px 10px;
+}
+
+.foto_pessoa {
+    width: 100%;
+}
+
+.detalhes_pessoa {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.nome {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #259a9f;
+    margin: 20px 0px 15px 0px;
+}
+
+.telefone,
+.email {
+    color: #b3b3b3;
+    font-style: italic;
+}
+
+
+.yellow-row-2 {
+    width: 12%;
+    padding-bottom: 20px;
+}
+
+.yellow-row-2 > hr {
+    border-top: 3px solid #f9ca55;
+    margin-top: 8px;
+}
+
+/* --------------- */
+.form-titulo {
+    font-size: 5.4rem;
+    font-family: Noto Sans;
+    font-weight: bold;
+    color: #858585;
+    padding-bottom: 20px;
+}
+
+.form-contato-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 49%;
+}
+
+.form-contato {
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.text-button-form {
+    margin-top: 10px;
+    background-color: transparent;
+    color: #24BEC6;
+    border: 2px solid #24BEC6;
+    text-decoration: none;
+    width: fit-content;
+    padding: 10px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+.text-button-form:hover {
+    background-color: rgba(36,190,198,0.3);
+    color: white;
+    border: 2px solid #24BEC6;
+}
+
+.text-button-route {
+    margin-top: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 12px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    width: fit-content;
+    padding: 5px 10px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+.text-button-route:hover {
+    background-color: rgba(255,255,255,0.3);
+    color: white;
+    border: 2px solid #fff;
+}
+
+.contato-visita {
+  background-color: #24BEC6;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.contato-visita-img>img {
+    height: 260px;
+    width: auto;
+}
+
+.contato-visita-externo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 49%;
+}
+
+.contato-visita-titulo {
+    margin: 0;
+    font-size: 2.4rem;
+    font-family: Noto Sans;
+    font-weight: bold;
+    color: #fff;
+    /* padding-bottom: 20px; */
+}
+
+.footer-container {
+  background-color: #EFEFEF;
+
+}
+
+.footer-above {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-top: 1px solid #C8C8C8;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    padding: 10px 0 ;
+}
+
+.footer-above p {
+  align-items: center;
+  margin: 0;
+  font-family: Noto Sans;
+  font-weight: bold;
+  font-size: 16px;
+  color: #858585;
+}
